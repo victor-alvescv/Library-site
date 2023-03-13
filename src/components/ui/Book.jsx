@@ -20,7 +20,7 @@ const Book = ( { book }) => {
 
         }
         return () => {
-            // when the component unmounts
+            // when the component unmounts!
             mountedRef.current = false;
         }
     })
