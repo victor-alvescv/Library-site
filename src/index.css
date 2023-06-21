@@ -229,6 +229,12 @@ LANDING
 
 #landing {
   background-color: rgb(245, 245, 245);
+  background-image: url("../src/assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #606266;
+  z-index: 1;
 }
 
 header {

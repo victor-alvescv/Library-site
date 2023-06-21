@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Movie from "../assets/movie.svg";
-import Movielogo from "../assets/movielogo.png";
+import Movielogo from "../assets/movielogofooter.png";
 
 const Landing = () => {
   return (
@@ -20,7 +20,7 @@ const Landing = () => {
               data-aos-delay="800"
               data-aos-once="true"
             >
-              <h2>
+              <h2 style={{color: '#f9f9f9'}}>
                 Find your dream book with{" "}
                 <span className="purple">Library</span>
               </h2>
