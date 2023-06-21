@@ -1,26 +1,57 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import UndrawBooks from '../assets/Undraw_Books.svg'
+import React from "react";
+import { Link } from "react-router-dom";
+import Movie from "../assets/movie.svg";
+import Movielogo from "../assets/movielogo.png";
 
 const Landing = () => {
-    return (
-        <section id="landing">
-          <header>
-            <div className="header__container">
-                <div className="header__description">
-                    <h1>Australia's most awarded online library platform</h1>
-                     <h2>Find your dream book with <span className='purple'>Library</span></h2>
-                     <Link to="/books">
-                        <button className="btn">Browse Books</button>
-                     </Link>
-                </div>
-                <figure className='header__img--wrapper'>
-                  <img src={UndrawBooks} alt="" />
-                </figure>
+  return (
+    <section id="landing">
+      <header>
+        <div className="header__container">
+          <div className="header__description">
+            
+              <img className="landing__logo" style={{marginBottom: '20px'}}
+                src={Movielogo}
+              />
+            <div
+              data-aos="fade-up"
+              data-aos-duration="
+        2000"
+              data-aos-delay="800"
+              data-aos-once="true"
+            >
+              <h2>
+                Find your dream book with{" "}
+                <span className="purple">Library</span>
+              </h2>
             </div>
-          </header>
-        </section>
-    )
-}
+            <div
+              data-aos="fade-up"
+              data-aos-duration="
+        2000"
+              data-aos-delay="1000"
+              data-aos-once="true"
+            >
+              <Link to="/books">
+                <button className="btn btn-book-info">Browse Movies</button>
+              </Link>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="
+        2000"
+            data-aos-delay="1400"
+            data-aos-once="true"
+          >
+            <figure className="header__img--wrapper">
+              <img src={Movie} alt="" />
+            </figure>
+          </div>
+        </div>
+      </header>
+    </section>
+  );
+};
 
-export default Landing
+export default Landing;

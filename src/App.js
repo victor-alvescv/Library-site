@@ -8,6 +8,11 @@ import { books } from './data'
 import BookInfo from "./pages/BookInfo";
 import Cart from "./pages/Cart";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 function App() {
   const [cart, setCart] = useState([])
 

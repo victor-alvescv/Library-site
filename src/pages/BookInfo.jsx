@@ -26,8 +26,8 @@ const BookInfo = ( { books, addToCart, cart } ) => {
                             <Link to="/books" className='book__link'>
                             <FontAwesomeIcon icon="arrow-left" />
                             </Link>
-                            <Link to="/books" className='book__link' >
-                                <h2 className='book__selected--title--top'>Books</h2>
+                            <Link to="/books" className='book__link' style={{textDecoration: 'none'}}>
+                                <h2 className='book__selected--title--top'>Movies</h2>
                             </Link>
                         </div>
                         <div className="book__selected">
@@ -42,22 +42,19 @@ const BookInfo = ( { books, addToCart, cart } ) => {
                                 </div>
                                 <div className="book__summary">
                                     <h3 className="book__summary--title">
-                                        Summary
+                                        Resume
                                         </h3>
                                     <p className="book__summary--para">
                                         {book.para}
                                 </p>
-                                <p className="book__summary--para">
-                                {book.para}  
-                                </p>
                                 </div>
                                 {bookExistsOnCart() ? (
                                 <Link to={`/cart`} className='book__link'>
-                                <button className="btn">Checkout</button>
+                                <button className="btn btn-book-info">Checkout</button>
                                 </Link>
                                 ) : (
-                                <button className="btn" onClick={() => addBookToCart(book)}>
-                                Add to cart
+                                <button className="btn btn-book-info" onClick={() => addBookToCart(book)}>
+                                Rent Movie
                                 </button>
                                 )}
                             </div>
@@ -69,7 +66,7 @@ const BookInfo = ( { books, addToCart, cart } ) => {
                     <div className="row">
                         <div className="book__selected--top">
                             <h2 className="book__selected--title--top">
-                                Recommended Books
+                                Recommended Movies
                             </h2>
                         </div>
                         <div className="books">
