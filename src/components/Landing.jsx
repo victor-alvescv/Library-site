@@ -9,10 +9,11 @@ const Landing = () => {
       <header>
         <div className="header__container">
           <div className="header__description">
-            
-              <img className="landing__logo" style={{marginBottom: '20px', zIndex: '2'}}
-                src={Movielogo}
-              />
+            <img
+              className="landing__logo"
+              style={{ marginBottom: "20px", zIndex: "2" }}
+              src={Movielogo}
+            />
             <div
               data-aos="fade-up"
               data-aos-duration="
@@ -20,7 +21,7 @@ const Landing = () => {
               data-aos-delay="800"
               data-aos-once="true"
             >
-              <h2 style={{color: '#f9f9f9'}}>
+              <h2 style={{ color: "#f9f9f9" }}>
                 Find your dream book with{" "}
                 <span className="purple">Library</span>
               </h2>
