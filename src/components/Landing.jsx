@@ -10,7 +10,7 @@ const Landing = () => {
         <div className="header__container">
           <div className="header__description">
             
-              <img className="landing__logo" style={{marginBottom: '20px'}}
+              <img className="landing__logo" style={{marginBottom: '20px', zIndex: '2'}}
                 src={Movielogo}
               />
             <div
