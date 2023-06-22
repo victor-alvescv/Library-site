@@ -7,12 +7,12 @@ const Highlights = () => {
     <section id="highlights">
       <div className="container">
         <div className="row">
-          <div data-aos="fade-down" data-aos-offset="400" data-aos-once="true">
+          <div data-aos="fade-down" data-aos-offset="150" data-aos-once="true">
             <h2 className="section__title">
               Why choose <span className="purple">MoviePlus</span>
             </h2>
           </div>
-          <div data-aos="fade-in" data-aos-offset="450" data-aos-once="true">
+          <div data-aos="fade-in" data-aos-offset="200" data-aos-once="true">
             <div className="highlight__wrapper">
               <Highlight
                 icon={<FontAwesomeIcon icon="bolt" />}

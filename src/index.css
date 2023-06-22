@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -379,13 +380,21 @@ FEATURES
   display: flex;
   flex-wrap: wrap;
   margin: 0 -24px;
+
 }
 
 .book {
   width: 25%;
   padding: 24px;
   transition: all 300ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: start;
 }
+
 
 .book:hover {
   transform: translateY(-3px);
@@ -451,6 +460,7 @@ FEATURES
   text-overflow: ellipsis;
   width: 150px;
   display: block;
+  text-align: center;
 }
 
 .book__ratings {
@@ -807,6 +817,14 @@ select {
   padding: 12px 0;
 }
 
+@media (max-width: 1220px) {
+   .book {
+    width: 50%;
+   }
+
+
+}
+
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
   .header__description {
@@ -850,6 +868,11 @@ select {
   .nav__list {
     display: none;
   }
+
+  .book {
+    width: 100%;
+  }
+
 
   .highlight {
     width: 100%;
