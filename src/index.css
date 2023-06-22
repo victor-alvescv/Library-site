@@ -380,7 +380,6 @@ FEATURES
   display: flex;
   flex-wrap: wrap;
   margin: 0 -24px;
-
 }
 
 .book {
@@ -394,7 +393,6 @@ FEATURES
   flex-direction: column;
   text-align: start;
 }
-
 
 .book:hover {
   transform: translateY(-3px);
@@ -610,9 +608,10 @@ select {
 }
 
 .book__selected--img {
-  max-height: 500px;
+  max-height: 100%;
   width: auto;
-  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .book__selected--description {
@@ -672,6 +671,7 @@ select {
 
 .book__selected--title {
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .book__summary--title {
@@ -818,11 +818,28 @@ select {
 }
 
 @media (max-width: 1220px) {
-   .book {
+  .book {
     width: 50%;
-   }
+  }
+}
 
+@media (max-width: 990px) {
+  .book__selected {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .book__selected--description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .book__selected--title {
+    text-align: center;
+  }
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
@@ -833,6 +850,13 @@ select {
 
   h1 {
     font-size: 40px;
+  }
+
+  .book__selected--figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 
   h2 {
@@ -859,8 +883,54 @@ select {
   }
 }
 
+@media (max-width: 600px) {
+  .cart__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .total {
+    max-width: initial;
+  }
+
+  .cart__total {
+    display: none;
+  }
+
+  .cart__quantity {
+    width: initial;
+  }
+
+
+
+  .cart__header .cart__quantity {
+    display: none;
+  }
+  
+  
+}
+
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
+  .book__selected--description {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .books__header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .book__selected--title {
+    text-align: center;
+  }
+
   .btn__menu {
     display: block;
   }
@@ -873,7 +943,6 @@ select {
     width: 100%;
   }
 
-
   .highlight {
     width: 100%;
   }
@@ -882,12 +951,22 @@ select {
     margin-bottom: 24px;
   }
 
+  .cart__book--title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    display: block;
+  }
+
   .cart__book--img {
-    display: none;
+    min-height: 130px;
   }
-  .cart__book--info {
-    padding-left: 0;
+
+  .cart__input {
+    margin-top: 10px;
   }
+
 }
 
 .landing__logo {

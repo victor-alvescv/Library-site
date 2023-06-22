@@ -30,7 +30,7 @@ const Footer = () => {
               style={{ textDecoration: "none" }}
               className="footer__link"
             >
-              Books
+              Movies
             </Link>
             <Link
               to="/"

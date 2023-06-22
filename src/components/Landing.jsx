@@ -22,7 +22,7 @@ const Landing = () => {
               data-aos-once="true"
             >
               <h2 style={{ color: "#f9f9f9" }}>
-                Find your dream book with{" "}
+                Find your dream movie with{" "}
                 <span className="purple">Library</span>
               </h2>
             </div>
