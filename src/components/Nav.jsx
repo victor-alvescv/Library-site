@@ -13,7 +13,7 @@ const Nav = ({ numberOfItems }) => {
     document.body.classList.remove("menu--open");
   }
   return (
-    <nav style={{ backgroundColor: "#040814" }}>
+    <nav style={{ backgroundColor: "#040814", zIndex: '4' }}>
       <div className="nav__container">
         <Link to="/">
           <img src={Movielogofooter} alt="" className="logo" />

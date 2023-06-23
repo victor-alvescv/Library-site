@@ -972,6 +972,28 @@ select {
   opacity: 0;
 }
 
+@media (max-height: 1000px) {
+  .header__img {
+    max-height: 40vh;
+}
+}
+
+
+@media (max-height: 800px) {
+  .landing__logo {
+       width: 50%;
+  }
+
+  .header__img {
+       display: none;
+  }
+
+  header {
+    height: calc(100vh - 70px);
+  }
+}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -981,4 +1003,4 @@ select {
     opacity: 1;
     transform: translateY(0px);
   }
-}
+} 
