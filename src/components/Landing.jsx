@@ -46,7 +46,7 @@ const Landing = () => {
             data-aos-once="true"
           >
             <figure className="header__img--wrapper">
-              <img src={Movie} alt="" />
+              <img className="header__img" src={Movie} alt="" />
             </figure>
           </div>
         </div>

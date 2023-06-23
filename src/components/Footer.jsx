@@ -33,7 +33,7 @@ const Footer = () => {
               Movies
             </Link>
             <Link
-              to="/"
+              to="/cart"
               style={{ textDecoration: "none" }}
               className="footer__link"
             >
