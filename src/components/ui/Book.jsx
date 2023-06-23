@@ -30,7 +30,7 @@ const Book = ( { book }) => {
             {
                 img ?  
                 (<>
-                <Link to={`/books/${book.id}`}>
+                <Link to={`/movies/${book.id}`}>
                 <figure className="book__img--wrapper">
                     <img 
                     src={img.src} 
@@ -39,7 +39,7 @@ const Book = ( { book }) => {
                 </figure>
             </Link>
             <div className="book__title">
-                <Link to={`/books/${book.id}`} className='book__title--link'>
+                <Link to={`/movies/${book.id}`} className='book__title--link'>
                     {book.title}
                 </Link>
             </div>

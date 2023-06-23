@@ -24,7 +24,7 @@ const Explore = () => {
             data-aos-easing="ease-in-out"
             data-aos-once="true"
           >
-            <Link to="/books">
+            <Link to="/movies">
               <button className="btn btn-book-info">Explore Movies</button>
             </Link>
           </div>

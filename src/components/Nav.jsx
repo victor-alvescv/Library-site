@@ -30,7 +30,7 @@ const Nav = ({ numberOfItems }) => {
           </li>
           <li className="nav__list">
             <Link
-              to="/books"
+              to="/movies"
               style={{ textDecoration: "none" }}
               className="nav__link"
             >
@@ -64,7 +64,7 @@ const Nav = ({ numberOfItems }) => {
               </Link>
             </li>
             <li className="menu__list">
-              <Link to="/books" className="menu__link">
+              <Link to="/movies" className="menu__link">
                 Movies
               </Link>
             </li>

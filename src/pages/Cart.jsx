@@ -75,7 +75,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                 <div className="cart__empty">
                   <img src={EmptyCart} alt="" className="cart__empty--img" />
                   <h2>You don't have any movies in your cart!</h2>
-                  <Link to="/books">
+                  <Link to="/movies">
                     <button className="btn btn-book-info">Browse Movies</button>
                   </Link>
                 </div>

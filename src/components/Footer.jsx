@@ -26,7 +26,7 @@ const Footer = () => {
               About
             </span>
             <Link
-              to="/books"
+              to="/movies"
               style={{ textDecoration: "none" }}
               className="footer__link"
             >

@@ -23,10 +23,10 @@ const BookInfo = ( { books, addToCart, cart } ) => {
                 <div className="books__container">
                     <div className="row">
                         <div className="book__selected--top">
-                            <Link to="/books" className='book__link'>
+                            <Link to="/movies" className='book__link'>
                             <FontAwesomeIcon icon="arrow-left" />
                             </Link>
-                            <Link to="/books" className='book__link' style={{textDecoration: 'none'}}>
+                            <Link to="/movies" className='book__link' style={{textDecoration: 'none'}}>
                                 <h2 className='book__selected--title--top'>Movies</h2>
                             </Link>
                         </div>

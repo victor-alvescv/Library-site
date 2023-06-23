@@ -33,7 +33,7 @@ const Landing = () => {
               data-aos-delay="1000"
               data-aos-once="true"
             >
-              <Link to="/books">
+              <Link to="/movies">
                 <button className="btn btn-book-info">Browse Movies</button>
               </Link>
             </div>
